@@ -14,20 +14,20 @@ setupJQueryCodeImproved();
 
 // --- Functions --- //
 
-function setupJQueryAutoUpdate() { //TODO: FERRAN, LE PUEDES ECHAR UN OJO PLS?
+function setupJQueryAutoUpdate() {
 
     const input = $(".jquery.liveupdate input");
     input.keyup(function () {
         alert("i am here!")
         const result = document.querySelector(".jquery.liveupdate .result");
-        result.textContent = "You are searching for: " + input.value;
+        result.textContent = "You are searching for: " + input.val();
     });
 
 
     $(".jquery.liveupdate button").click(function () {
-        alert("and i am here too!") //TODO: NO SE MUESTRA, NO PASA POR AQUÍ AL HACER CLICK!
+        alert("and i am here too!")
         $(".jquery.liveupdate .result").textContent = "You searched for: " +
-            document.querySelector(".jquery.liveupdate input").value;
+            document.querySelector(".jquery.liveupdate input").val();
     });
 }
 
