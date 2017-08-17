@@ -13,6 +13,8 @@ input, button {
   font-size: 16px;
 }
 
+
+/* style affects to class "section" elements */
 .section {
   padding: 20px;
   background-color: rgb(219, 227, 232); /* color in RGB format */
